@@ -9,7 +9,7 @@ public class ReScannerEx {
 
     public void readTwoNumberAndPlus(){
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("Type two NUMBERS!");
         System.out.println(plusTwoNumbers(sc.nextInt(), sc.nextInt()));
     }
 }
