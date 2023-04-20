@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ScannerFormatting {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int a = scn.nextInt();
-        int b = scn.nextInt();
-        System.out.printf("%d + %d = %d", a, b, a + b);
+        int val1 = scn.nextInt();
+        int val2 = scn.nextInt();
+        System.out.printf("%d + %d = %d", val1, val2, val1 + val2);
     }
 }
