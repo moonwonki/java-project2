@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class CodeUp1014 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        char a, b;
-        String s = scn.nextLine();
+        char val1, val2;
+        String stringInput = scn.nextLine();
 
-        a = s.charAt(0);
-        b = s.charAt(2);
+        val1 = stringInput.charAt(0);
+        val2 = stringInput.charAt(2);
 
-        System.out.printf("%c %c", b, a);
+        System.out.printf("%c %c", val2, val1);
     }
 }
