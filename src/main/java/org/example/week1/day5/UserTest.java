@@ -11,6 +11,9 @@ public class UserTest {
         mooninkyoung.name = "Moon In Kyoung";
         mooninkyoung.phoneNumber = "111";
         mooninkyoung.age = 20;
+
+        System.out.printf("%s is adult : %b\n", moonwonki.name, moonwonki.isAdult());
+        System.out.printf("%s is adult : %b\n", mooninkyoung.name, mooninkyoung.isAdult());
     }
 
 
