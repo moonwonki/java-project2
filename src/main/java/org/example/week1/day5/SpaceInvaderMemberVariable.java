@@ -13,12 +13,14 @@ public class SpaceInvaderMemberVariable {
     }
 
     public static void main(String[] args) {
-        SpaceInvaderMemberVariable si = new SpaceInvaderMemberVariable();
+        SpaceInvaderMemberVariable simv = new SpaceInvaderMemberVariable();
 
-        si.moveLeft();
-        si.moveRight();
-        si.moveRight();
-        si.moveRight();
+        simv.moveLeft();
+        simv.moveRight();
+        simv.moveRight();
+        simv.moveRight();
+
+        System.out.printf("최종 위치: %d", simv.location);
 
     }
 }
