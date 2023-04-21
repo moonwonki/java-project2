@@ -14,10 +14,10 @@ public class SpaceInvader {
     }
 
     public static void main(String[] args) {
-        SpaceInvader si = new SpaceInvader();
+        SpaceInvader simv = new SpaceInvader();
 
-        si.moveLeft();
-        si.moveRight();
+        simv.moveLeft();
+        simv.moveRight();
     }
 
 }
