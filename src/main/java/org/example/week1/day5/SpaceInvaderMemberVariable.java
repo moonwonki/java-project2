@@ -20,7 +20,8 @@ public class SpaceInvaderMemberVariable {
         simv.moveRight();
         simv.moveRight();
 
-        System.out.printf("최종 위치: %d", simv.location);
+        // it doesn't compute Korean
+        System.out.printf("final location: %d", simv.location);
 
     }
 }
