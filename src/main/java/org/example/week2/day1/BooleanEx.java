@@ -9,5 +9,9 @@ public class BooleanEx {
         boolean isBalanceSufficient = false;
 
         System.out.println("isBalanceSufficient = " + isBalanceSufficient);
+
+        int age = 37;
+        boolean isAdult = age >= 18;
+        System.out.println("isAdult = " + isAdult);
     }
 }
