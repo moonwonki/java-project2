@@ -9,5 +9,8 @@ public class DefAndInitArr {
         iArr[3] = 4;
         iArr[4] = 5;
         System.out.println(iArr);
+
+        int[] newIntArr = new int[]{1,2,3,4};
+        System.out.printf("%d, %d, %d, %d\n", newIntArr[0], newIntArr[1], newIntArr[2], newIntArr[3]);
     }
 }
