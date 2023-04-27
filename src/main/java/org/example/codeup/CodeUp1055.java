@@ -9,7 +9,6 @@ public class CodeUp1055 {
         int firstInput = scn.nextInt();
         int secondInput = scn.nextInt();
 
-        if (firstInput == 1 || secondInput == 1) System.out.println("1");
-        else System.out.println("0");
+        System.out.println(firstInput == 1 || secondInput == 1 ? 1 : 0);
     }
 }
