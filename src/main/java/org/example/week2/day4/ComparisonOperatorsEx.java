@@ -7,5 +7,9 @@ public class ComparisonOperatorsEx {
 
         System.out.printf("iVal1 == iVal2 = %b", iVal1 == iVal2);
         System.out.printf("iVal1 != iVal2 = %b", iVal1 != iVal2);
+        System.out.printf("iVal1 < iVal2 = %b", iVal1 < iVal2);
+        System.out.printf("iVal1 <= iVal2 = %b", iVal1 <= iVal2);
+        System.out.printf("iVal1 > iVal2 = %b", iVal1 > iVal2);
+        System.out.printf("iVal1 >= iVal2 = %b", iVal1 >= iVal2);
     }
 }
