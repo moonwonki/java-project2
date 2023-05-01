@@ -1,6 +1,6 @@
 package org.example.programmers;
 
-public class DiceGame {
+public class ContinuedNum {
 
     class Solution {
         public int solution(int[] num_list) {
