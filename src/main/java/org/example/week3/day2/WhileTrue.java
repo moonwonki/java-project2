@@ -4,8 +4,11 @@ public class WhileTrue {
     public static void main(String[] args) {
         int cnt = 0;
         while(true){
-            System.out.println(cnt++);
-            break;
+            System.out.printf("%d ", cnt++);
+
+            if (cnt == 100) {
+                break;
+            }
         }
     }
 }
