@@ -1,8 +1,8 @@
 package org.example.week3.day2;
 
-public class FiveOrZero {
+public class ZeroOrFive {
     public static void main(String[] args) {
-        int num = 505505;
+        int num = 505504;
 
         if(isZeroOrFive(num)){
             System.out.println("Zero Or Five : true");
@@ -11,9 +11,11 @@ public class FiveOrZero {
 
     private static boolean isZeroOrFive(int num) {
         while (num > 0){
-            if (num % 10 != 5 && num % 10 != 0){
+            int remainder = num % 10;
+            if (remainder % 5 != 0){
                 return false;
             }
+            num /= 10;
         }
         return true;
     }
