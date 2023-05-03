@@ -1,4 +1,4 @@
-package org.example.week3.day2;
+package org.example.week3.day3;
 
 public class DoWhileEx {
     public static void main(String[] args) {
