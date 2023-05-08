@@ -15,6 +15,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok:1.18.26")
+    implementation("org.jsoup:jsoup:1.16.1")
 }
 
 tasks.test {
