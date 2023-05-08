@@ -10,7 +10,7 @@ public class MutsaMath {
     }
 
     //method
-    public int sumOfFactors(int num){
+        public int sumOfFactors(int num){
         int sum = 0;
 
         int divisor = 1;
