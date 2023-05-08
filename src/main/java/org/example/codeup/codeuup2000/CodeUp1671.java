@@ -9,6 +9,10 @@ public class CodeUp1671 {
         int myRSP = scn.nextInt();
         int opRSP = scn.nextInt();
 
+        playRSP(myRSP, opRSP);
+    }
+
+    private static void playRSP(int myRSP, int opRSP) {
         if (myRSP == opRSP) {
             System.out.println("tie");
             return;
