@@ -35,14 +35,17 @@ public class CodeUp1098OOP {
 
     //static main
     public static void main(String[] args) {
+
         Scanner scn = new Scanner(System.in);
         int mapHeight = scn.nextInt();
         int mapWidth = scn.nextInt();
         int stickNum = scn.nextInt();
 
+        //build map
         CodeUp1098OOP c1098 = new CodeUp1098OOP(mapHeight, mapWidth);
 
 
+        //get Input and set stick
         for (int i = 0; i < stickNum; i++){
             int stickLen = scn.nextInt();
             int stickDir = scn.nextInt();
