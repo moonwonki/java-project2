@@ -3,7 +3,7 @@ package org.example.week4.day2;
 import java.util.Scanner;
 
 public class ReversePyramid {
-    private static String spaceChar = "0";
+    private  String spaceChar = "0";
 
     //Generator
     public ReversePyramid(String spaceChar) {
@@ -11,7 +11,7 @@ public class ReversePyramid {
     }
 
     //method
-    private static void printPyramid(int height) {
+    private void printPyramid(int height) {
         for (int row = 0; row < height; row++){
             //empty space
             System.out.printf(spaceChar.repeat(row));
