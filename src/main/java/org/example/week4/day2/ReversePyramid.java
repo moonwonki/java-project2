@@ -12,14 +12,13 @@ public class ReversePyramid {
 
     //method
     private void printPyramid(int height) {
-        for (int row = 0; row < height; row++){
-            //empty space
-            System.out.printf(spaceChar.repeat(row));
-            //star
-            for (int i = 0; i < height - 2 * row; i++) System.out.printf("*");
-
-            System.out.printf("\n");
+        for (int row = 0; row < height / 2 + 1; row++){
+            System.out.printf("%s",makeALine(height, row));
         }
+    }
+
+    private String makeALine(int height, int row) {
+        return String.format("%s%s\n", spaceChar.repeat(row), "*".repeat(height - 2 * row));
     }
 
 
