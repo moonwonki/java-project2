@@ -11,7 +11,7 @@ public class ReversePyramid {
     }
 
     //method
-    private void printPyramid(int height) {
+    public void printPyramid(int height) {
         for (int row = 0; row < height / 2 + 1; row++){
             System.out.printf("%s",makeALine(height, row));
         }
