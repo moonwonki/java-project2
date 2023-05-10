@@ -1,18 +1,17 @@
 package org.example.week4.day3;
 
-import org.example.week4.day2.ShapeDrawer;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class DiamondShapeDrawer extends ShapeDrawer {
+public class DiamondShapeDrawer extends ShapeDrawer2 {
     public static void main(String[] args) throws IOException{
         // critical logic : pivot!
         Scanner scn = new Scanner(System.in);
 
         int numInput = scn.nextInt();
 
-        ShapeDrawer dsd = new DiamondShapeDrawer();
+        ShapeDrawer2 dsd = new DiamondShapeDrawer();
         dsd.printShape(numInput);
     }
 
