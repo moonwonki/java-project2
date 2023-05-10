@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class DiamondPrintNoRepeat {
     public static String getForLoopSymbol(String symbol, int n){
         String result = "";
-
         for (int i = 0; i < n; i++) result = result.concat(symbol);
-
         return result;
     }
 
