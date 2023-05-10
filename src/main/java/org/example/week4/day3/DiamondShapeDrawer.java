@@ -5,13 +5,17 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class DiamondShapeDrawer extends ShapeDrawer2 {
+    public DiamondShapeDrawer(Printer2 printer) {
+        super(printer);
+    }
+
     public static void main(String[] args) throws IOException{
         // critical logic : pivot!
         Scanner scn = new Scanner(System.in);
 
         int numInput = scn.nextInt();
 
-        ShapeDrawer2 dsd = new DiamondShapeDrawer();
+        ShapeDrawer2 dsd = new DiamondShapeDrawer(new ConsolePrinter2());
         dsd.printShape(numInput);
     }
 
