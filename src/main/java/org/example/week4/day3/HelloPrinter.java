@@ -1,6 +1,8 @@
 package org.example.week4.day3;
 
 public class HelloPrinter {
+
+    Printer2 printer;
     public void print(String message){
         System.out.println(message);
     }
