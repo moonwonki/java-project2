@@ -17,6 +17,7 @@ public class CodeUp3108 {
 
         studentList = new ArrayList<>();
 
+        //입력받기
         for (int i = 0; i < numInput; i++){
             st = new StringTokenizer(br.readLine());
 
@@ -29,6 +30,7 @@ public class CodeUp3108 {
 
         }
 
+        //입력받은 결과 정렬하기.
         studentList.sort(new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
@@ -38,6 +40,7 @@ public class CodeUp3108 {
             }
         });
 
+        //입력받은 인덱스에 해당하는 사람 호출하기.
         st = new StringTokenizer(br.readLine());
         int tokens = st.countTokens();
         for (int i = 0; i < tokens; i++){
@@ -47,6 +50,7 @@ public class CodeUp3108 {
         }
     }
 
+    //I인지 D인지 판별하여 개별적으로 코드 실행하기.
     public static void executeCode(Student input){
         if (input.code.charAt(0) == 'I' && !isContained(input.id)){
             studentList.add(input);
