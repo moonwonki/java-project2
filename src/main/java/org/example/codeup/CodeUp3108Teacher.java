@@ -3,7 +3,7 @@ package org.example.codeup;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Codeup3108Teacher {
+public class CodeUp3108Teacher {
 
     private List<Student> students = new ArrayList<>();
 
@@ -50,7 +50,7 @@ public class Codeup3108Teacher {
         int size = 1;
         String[] splitted = "I 1011 한라산".split(" ");
 
-        Codeup3108Teacher codeup3108 = new Codeup3108Teacher();
+        CodeUp3108Teacher codeup3108 = new CodeUp3108Teacher();
         Student student = codeup3108.makeAStudent(splitted[0], Integer.parseInt(splitted[1]), splitted[2]);
         codeup3108.process(student);
         codeup3108.printStudents();
