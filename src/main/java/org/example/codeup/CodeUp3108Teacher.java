@@ -15,7 +15,7 @@ public class CodeUp3108Teacher {
     private boolean isExist(Student pStudent) {
         // 중복 여부 check
         for (Student student : students){
-            if(pStudent.getCode().equals(student.getCode())) return true;
+            if(pStudent.getId() == student.getId()) return true;
         }
         return false;
     }
