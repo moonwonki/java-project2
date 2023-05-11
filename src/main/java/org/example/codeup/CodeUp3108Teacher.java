@@ -1,14 +1,17 @@
 package org.example.codeup;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class CodeUp3108Teacher {
 
     private List<Student> students = new ArrayList<>();
 
-    public Student makeAStudent(String code, int testId, String name){
-        return new Student(code, testId, name);
+    public Student makeAStudent(String input){
+        String[] splitInput = input.split(" ");
+        return new Student(splitInput[0], Integer.parseInt(splitInput[1]), splitInput[2]);
     }
 
     // shift + 6
@@ -26,7 +29,8 @@ public class CodeUp3108Teacher {
         }
     }
 
-    public void process(Student pStudent) {
+    public void process(String input) {
+        Student pStudent = makeAStudent(input);
         switch (pStudent.getCode()){
             case "I" -> addAStudent(pStudent);
             case "D" -> deleteStudent(pStudent);
@@ -46,14 +50,38 @@ public class CodeUp3108Teacher {
         }
     }
 
+    private void printSpecificStudents(int[] arr){
+        // 정렬
+        Collections.sort(students,new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o1.getId() - o2.getId();
+            }
+        });
+
+        // 출력
+        for (int i = 0; i < arr.length; i++) {
+            Student student = students.get(arr[i] - 1);
+            System.out.printf("%s %s %s\n", student.getCode(), student.getId(), student.getName());
+        }
+    }
+
     public static void main(String[] args) {
         int size = 1;
         String[] splitted = "I 1011 한라산".split(" ");
 
         CodeUp3108Teacher codeup3108 = new CodeUp3108Teacher();
-        Student student = codeup3108.makeAStudent(splitted[0], Integer.parseInt(splitted[1]), splitted[2]);
-        codeup3108.process(student);
-        codeup3108.printStudents();
+        codeup3108.process("I 1011 한라산");
+        codeup3108.process("I 999 백두산");
+        codeup3108.process("I 999 오대산");
+        codeup3108.process("D 999 백두산");
+        codeup3108.process("I 800 백두산");
+        codeup3108.process("D 500 한라산");
+        codeup3108.process("I 900 남산");
+        codeup3108.process("I 950 금강산");
+        codeup3108.process("I 1205 지리산");
+        codeup3108.process("I 700 북한산");
+        codeup3108.printSpecificStudents(new int[]{1, 2, 4, 5, 6});
 
     }
 
