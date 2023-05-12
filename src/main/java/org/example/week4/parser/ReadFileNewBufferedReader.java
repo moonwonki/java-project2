@@ -7,11 +7,11 @@ import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ReadFileEx {
+public class ReadFileNewBufferedReader implements ReadFile{
 
 
     public static void main(String[] args) throws IOException {
-        ReadFileEx rfe = new ReadFileEx();
+        ReadFile rfe = new ReadFileNewBufferedReader();
         List<String> result = rfe.getLines("hospital_info_0920_utf8.csv");
         System.out.println(result.get(1));
 
