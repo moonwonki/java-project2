@@ -24,7 +24,7 @@ public class ReadFileEx {
 
     public void printHospitalList(List<Hospital> hospitals){
         for (int i = 0; i < hospitals.size(); i++){
-            System.out.printf("%s %s %s\n", hospitals.get(i).getName(), hospitals.get(i).getWebsiteAddr(), hospitals.get(i).getAddress().toString());
+            System.out.printf("%s %s %s\n", hospitals.get(i).getName(), hospitals.get(i).getWebsiteAddr(), hospitals.get(i).getAddress().getFullAddr());
         }
     }
     public static void main(String[] args) {
