@@ -2,6 +2,6 @@ package org.example.week4.parser;
 
 import java.util.List;
 
-public interface ReadFile {
+public interface LineReader {
     List<String> getLines(String fileName);
 }
