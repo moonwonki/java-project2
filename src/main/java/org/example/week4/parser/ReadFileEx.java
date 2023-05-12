@@ -2,11 +2,35 @@ package org.example.week4.parser;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ReadFileEx {
+
+
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\MoonWonKi\\git\\java\\java-project2\\1.병원정보서비스 2022.10..csv"), StandardCharsets.UTF_8));
-        System.out.println(br.readLine());
+        ReadFileEx rfe = new ReadFileEx();
+        List<String> result = rfe.getLines("hospital_info_0920_utf8.csv");
+        System.out.println(result.get(1));
+
+    }
+
+    public List<String> getLines(String fileName) {
+        List<String> lines = new LinkedList<>();
+
+        try(BufferedReader br = Files.newBufferedReader(Paths.get(fileName), StandardCharsets.UTF_8)){
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                //System.out.println(line);
+                lines.add(line);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return lines;
     }
 }
-//멋사5기식스센스팀
