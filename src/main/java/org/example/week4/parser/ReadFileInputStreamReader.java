@@ -9,12 +9,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ReadFileInputStreamReader implements ReadFile{
-    public static void main(String[] args) throws IOException {
-        ReadFile rfe = new ReadFileInputStreamReader();
-        List<String> result = rfe.getLines("hospital_info_0920_utf8.csv");
-        System.out.println(result.get(1));
-
-    }
 
     public List<String> getLines(String fileName) {
         List<String> lines = new LinkedList<>();

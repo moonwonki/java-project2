@@ -10,12 +10,7 @@ import java.util.List;
 public class ReadFileNewBufferedReader implements ReadFile{
 
 
-    public static void main(String[] args) throws IOException {
-        ReadFile rfe = new ReadFileNewBufferedReader();
-        List<String> result = rfe.getLines("hospital_info_0920_utf8.csv");
-        System.out.println(result.get(1));
 
-    }
 
     public List<String> getLines(String fileName) {
         List<String> lines = new LinkedList<>();
