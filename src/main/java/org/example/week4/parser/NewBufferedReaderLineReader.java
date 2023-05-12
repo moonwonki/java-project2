@@ -9,9 +9,6 @@ import java.util.List;
 //NewBufferedReader를 활용하는 LineReader 구현체
 public class NewBufferedReaderLineReader implements LineReader {
 
-
-
-
     public List<String> getLines(String fileName) {
         List<String> lines = new LinkedList<>();
 
