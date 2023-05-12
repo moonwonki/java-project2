@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
-
+//NewBufferedReader를 활용하는 LineReader 구현체
 public class NewBufferedReaderLineReader implements LineReader {
 
 

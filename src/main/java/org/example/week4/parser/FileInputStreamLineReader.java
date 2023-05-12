@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;
-
+//FileInputStreamReader 활용하는 LineReader 구현체
 public class FileInputStreamLineReader implements LineReader {
 
     public List<String> getLines(String fileName) {
