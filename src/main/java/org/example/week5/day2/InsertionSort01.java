@@ -18,9 +18,10 @@ public class InsertionSort01<T> {
             }
         }
     };
+
     public static void main(String[] args) {
-        Integer arr[] = {7, 2, 3, 9, 28, 13};
-        InsertionSort01<Integer> isInt = new InsertionSort01<Integer>();
+        Character arr[] = {'A', 'F', 'B', 'D', 'E', 'C'};
+        InsertionSort01<Character> isInt = new InsertionSort01<>();
 
         arr = isInt.sort(arr, false);
 
