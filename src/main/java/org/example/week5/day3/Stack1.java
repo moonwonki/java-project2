@@ -8,11 +8,20 @@ public class Stack1 {
 
     public void push(int value){
         this.arr[pointer++] = value;
-        System.out.println(Arrays.toString(arr));
-        System.out.println();
+        //System.out.println(Arrays.toString(arr));
+        //System.out.println();
     }
 
     public int pop(){
         return arr[--pointer];
+    }
+
+    public static void main(String[] args) {
+        Stack1 st1 = new Stack1();
+
+        st1.push(10);
+        st1.push(11);
+        st1.push(12);
+        st1.pop();
     }
 }
