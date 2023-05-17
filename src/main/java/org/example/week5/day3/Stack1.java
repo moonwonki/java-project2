@@ -1,6 +1,7 @@
 package org.example.week5.day3;
 
 import java.util.Arrays;
+import java.util.EmptyStackException;
 
 public class Stack1 {
     private int[] arr = new int[10000];
@@ -13,6 +14,9 @@ public class Stack1 {
     }
 
     public int pop(){
+        if (pointer == 0){
+            throw new EmptyStackException();
+        }
         return arr[--pointer];
     }
 
@@ -30,8 +34,9 @@ public class Stack1 {
 
     public static void main(String[] args) {
         Stack1 st1 = new Stack1();
-
+        System.out.println(st1.isEmpty());
         st1.push(10);
+        System.out.println(st1.isEmpty());
         st1.push(11);
         st1.push(12);
         st1.pop();
