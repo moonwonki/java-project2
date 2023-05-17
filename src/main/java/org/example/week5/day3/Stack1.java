@@ -1,6 +1,5 @@
 package org.example.week5.day3;
 
-import java.util.Arrays;
 import java.util.EmptyStackException;
 
 public class Stack1 {
@@ -9,8 +8,6 @@ public class Stack1 {
 
     public void push(int value){
         this.arr[pointer++] = value;
-        //System.out.println(Arrays.toString(arr));
-        //System.out.println();
     }
 
     public int pop(){
