@@ -16,6 +16,18 @@ public class Stack1 {
         return arr[--pointer];
     }
 
+    public boolean isEmpty(){
+        return pointer == 0;
+    }
+
+    public int peek(){
+        return arr[pointer - 1];
+    }
+
+    public int size(){
+        return pointer;
+    }
+
     public static void main(String[] args) {
         Stack1 st1 = new Stack1();
 

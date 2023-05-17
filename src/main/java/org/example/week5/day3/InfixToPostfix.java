@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class InfixToPostfix {
 
+    //괄호와 소수는 입력되지 않는다는 것을 전제로 진행한다.
     public static void main(String[] args) {
         String line = "1+2*3+4";
         InfixToPostfix ipf = new InfixToPostfix();
